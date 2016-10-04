@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link href="css/styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/validate.js" defer></script>
+  <title>Pizza Survey</title>
+</head>
+<body>
+  <header>
+    <h1>Pizza Survey</h1>
+  </header>
+
+
+  <section id="surveyForm">
+
+    <form id="pizzaForm" action="#" method="post" name="survey">
+
+      <div class="input-line">
+        <label for="ageRange">
+          <span>What is your age?<br></span>
+          <select id="ageRange" name="age">
+            <option value="choose" selected>Age (choose)</option>
+            <option value="u12">Under 12</option>
+            <option value="12">12-17</option>
+            <option value="18">18-24</option>
+            <option value="25"> 25-34</option>
+            <option value="35">35-44</option>
+            <option value="45">45-54</option>
+            <option value="55">55-64</option>
+            <option value="65">65+</option>
+          </select>
+        </label>
+        <p class="error" id="ageErr">*** Please select an age.</p>
+      </div>
+
+      <div class="input-line">
+        <label for="gender">
+          <span>What is your gender?<br></span>
+          <input id="gender" name="gender" type="text" maxlength="20">
+        </label>
+        <p class="error" id="gendErr">*** Please enter a gender.</p>
+      </div>
+
+      <div class="input-line">
+        <label for="adjective">
+          <span>Describe pizza in one word.<br></span>
+          <input id="adjective" name="adjective" type="text" maxlength="20" placeholder="E.g. &quot;delicious&quot;">
+        </label>
+        <p class="error" id="adjErr">*** Please enter an adjective.</p>
+      </div>
+
+      <div id="toppings">
+        <fieldset>
+          <legend>Which toppings do you enjoy?</legend>
+          <ul id="toppingList">
+            <li>
+              <label for="toppingOne">
+                <input type="checkbox" id="toppingOne" name="pepperoni" value="pepperoni">Pepperoni
+              </label>
+            </li>
+            <li>
+              <label for="toppingTwo">
+                <input type="checkbox" id="toppingTwo" name="sausage" value="sausage">Sausage
+              </label>
+            </li>
+            <li>
+              <label for="toppingThree">
+                <input type="checkbox" id="toppingThree" name="mushrooms" value="mushrooms">Mushrooms
+              </label>
+            </li>
+            <li>
+              <label for="toppingFour">
+                <input type="checkbox" id="toppingFour" name="onions" value="onions">Onions
+              </label>
+            </li>
+            <li>
+              <label for="toppingFive">
+                <input type="checkbox" id="toppingFive" name="green-peppers" value="green-peppers">Green Peppers
+              </label>
+            </li>
+            <li>
+              <label for="toppingSix">
+                <input type="checkbox" id="toppingSix" name="olives" value="olives">Olives
+              </label>
+            </li>
+            <li>
+              <label for="toppingSeven">
+                <input type="checkbox" id="toppingSeven" name="ham" value="ham">Ham
+              </label>
+            </li>
+            <li>
+              <label for="toppingEight">
+                <input type="checkbox" id="toppingEight" name="pineapple" value="pineapple">Pineapple
+              </label>
+            </li>
+          </ul>
+        </fieldset>
+      </div>
+
+      <div id="buttons">
+        <button type="submit">Submit</button>
+        <button type="reset">Reset Data</button>
+      </div>
+    </form>
+  </section>
+
+  <section id="formSuccess">
+    <p>
+      Thank you for sharing your pizza preferences!
+    </p>
+  </section>
+
+</body>
+</html>

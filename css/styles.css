@@ -1,0 +1,95 @@
+html {
+  font-size: 110%;
+  font-family: 'Roboto', serif;
+  background: url(../img/pizza.jpg);
+  background-position: top;
+  background-repeat: repeat;
+}
+
+.error {
+  display: none;
+  color: yellow;
+}
+
+#formSuccess {
+  text-align: center;
+  display: none;
+  height: 800px;
+}
+
+body {
+  background-color: slategray;
+  color: white;
+  opacity: .95;
+  margin: 0;
+}
+
+header {
+  vertical-align: top;
+  background: #C33;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
+h1 {
+  text-align: center;
+  margin: 0;
+}
+
+#surveyForm {
+  padding: 0 15% 0 15%;
+}
+
+.input-line {
+  margin: 0;
+  display: block;
+  text-align: left;
+  padding: 1rem;
+}
+
+input {
+  font-size: 110%;
+  opacity: 1;
+}
+
+select {
+  font-size: 110%;
+}
+
+
+#toppings {
+  display: block;
+  padding: 1rem;
+}
+
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+#toppingList {
+  list-style-type: none;
+}
+
+#toppingList li{
+  padding: .2rem;
+}
+
+
+#buttons {
+  display: block;
+  text-align: center;
+  margin: 0;
+}
+
+button {
+  font-family: 'Roboto', serif;
+  margin: 1rem;
+  padding: 1rem;
+  font-size: 100%;
+}
